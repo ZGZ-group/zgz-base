@@ -1,2 +1,1 @@
-# zgz-base
-Base Project for Spring Boot
+# early-autumn-base

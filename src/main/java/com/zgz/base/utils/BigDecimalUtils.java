@@ -1,6 +1,7 @@
 package com.zgz.base.utils;
 
-import javax.validation.constraints.NotNull;
+import com.sun.istack.internal.NotNull;
+
 import java.math.BigDecimal;
 
 public class BigDecimalUtils {

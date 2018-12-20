@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 public class BigDecimalUtils {
 
     private static final int DEFAULT_SCALE = 2;
-    private static final int DEFAULT_ROUNG = BigDecimal.ROUND_HALF_UP;//四舍五入向上取整
+    private static final int DEFAULT_ROUND = BigDecimal.ROUND_HALF_UP;//四舍五入向上取整
 
     public static BigDecimal valueOf(@NotNull Double value) {
         return BigDecimal.valueOf(value);
@@ -33,7 +33,7 @@ public class BigDecimalUtils {
      * @return 和
      */
     public static Double add(Double addend, Double augend, int scale) {
-        return valueOf(addend).add(valueOf(augend)).setScale(scale, DEFAULT_ROUNG).doubleValue();
+        return valueOf(addend).add(valueOf(augend)).setScale(scale, DEFAULT_ROUND).doubleValue();
     }
 
     /**
@@ -56,7 +56,7 @@ public class BigDecimalUtils {
      * @return 差
      */
     public static Double subtract(Double minuend, Double reduction, int scale) {
-        return valueOf(minuend).subtract(valueOf(reduction)).setScale(scale, DEFAULT_ROUNG).doubleValue();
+        return valueOf(minuend).subtract(valueOf(reduction)).setScale(scale, DEFAULT_ROUND).doubleValue();
     }
 
     /**
@@ -79,7 +79,7 @@ public class BigDecimalUtils {
      * @return 积
      */
     public static Double multiply(Double multiplier, Double multiplicand, int scale) {
-        return valueOf(multiplier).multiply(valueOf(multiplicand)).setScale(scale, DEFAULT_ROUNG).doubleValue();
+        return valueOf(multiplier).multiply(valueOf(multiplicand)).setScale(scale, DEFAULT_ROUND).doubleValue();
     }
 
     /**
@@ -102,7 +102,7 @@ public class BigDecimalUtils {
      * @return 余
      */
     public static Double divide(Double dividend, Double divisor, int scale) {
-        return valueOf(dividend).divide(valueOf(divisor), scale, DEFAULT_ROUNG).doubleValue();
+        return valueOf(dividend).divide(valueOf(divisor), scale, DEFAULT_ROUND).doubleValue();
     }
 
 }
